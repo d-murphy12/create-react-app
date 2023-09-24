@@ -1,38 +1,59 @@
-.App {
+.card {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid;
+  padding: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.details {
+margin: 10 px;
+padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.details summary{
+font-size: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttons {
+display: block;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons button:focus, 
+.buttons button:hover {
+background-color: pink;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons button:active {
+bakground-color: blue;
+}
+
+.button[data-toggle-btn] {
+padding: 10px;
+font-size: 15px;
+display: block;
+}
+
+@media only screen and (max-width: 1200px){
+.wrapper {
+  background-color: pink;
+}
+}
+@media only screen and (max-width: 600px){
+.wrapper {
+  background-color: purple;
+}
+}
+@media only screen and (max-width: 425px){
+.wrapper {
+  font-weight: normal;
+}
+.wrapper .header h3 {
+  font-size: 12px;
+}
+.wrapper .header h4 {
+  font-size: 10px !important;
+}
+details {
+  display: none;
+}
 }
