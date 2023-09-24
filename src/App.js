@@ -3,12 +3,13 @@ import './App.css';
 
 function App() {
   return (
+  <div>
     <div class="buttons">
       <button class="duplicate">Duplicate card</button>
       <button class="changetxt">Change title</button>
-<button id="deletecard">Delete</button>
-<button data-toggle-btn>Toggle details</button>
-  <button id="changebackground">Change Background</button>
+      <button id="deletecard">Delete</button>
+      <button data-toggle-btn>Toggle details</button>
+      <button id="changebackground">Change Background</button>
   </div>
 
     <div id="card" class="card">
@@ -23,7 +24,7 @@ function App() {
     </div>
     </details>
 </div>
-
+</div>
   );
 }
 
